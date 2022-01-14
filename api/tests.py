@@ -90,7 +90,6 @@ class CarTest(APITestCase):
     def test_list_popular(self):
         response = self.client.get('/api/popular/', content_type='application/json' )
         result = response.json()
-        print(result)
         expected_response = [
             {
                 'id': 1,
